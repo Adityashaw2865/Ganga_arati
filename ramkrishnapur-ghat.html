@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramkrishnapur Ghat — Ganga Aarti | Howrah</title>
+<meta name="description" content="Experience the divine Ganga Aarti at Ramkrishnapur Ghat, Howrah, West Bengal. Sacred evening prayers, Vedic chants, shlokas and spiritual blessings by Maa Ganga.">
+<meta name="keywords" content="Ganga Aarti, Ramkrishnapur Ghat, Howrah, Maa Ganga, Hooghly River, Sandhya Aarti, West Bengal">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --saffron: #FF9933;
+  --gold: #D4AF37;
+  --gold-light: #f0d060;
+  --gold-dim: rgba(212,175,55,0.15);
+  --maroon: #7A1E1E;
+  --maroon-dark: #4a0f0f;
+  --river-blue: #0F4C81;
+  --midnight: #0F172A;
+  --ivory: #FFF8E7;
+  --temple-white: #FFFDF7;
+  --text-dark: #1E293B;
+  --text-muted: #64748b;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:var(--temple-white);color:var(--text-dark);overflow-x:hidden;}
+
+/* LANG TOGGLE */
+.lang-hi{display:none;font-family:'Noto Sans Devanagari',sans-serif;}
+body.hi .lang-en{display:none;}
+body.hi .lang-hi{display:block;}
+.ihi{display:none;font-family:'Noto Sans Devanagari',sans-serif;}
+body.hi .ien{display:none;}
+body.hi .ihi{display:inline;}
+
+/* TOAST */
+#toast{
+  position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(120px);
+  background:linear-gradient(135deg,#0f172a,#1a2a4a);
+  color:var(--gold);border:1px solid rgba(212,175,55,0.5);
+  padding:12px 28px;border-radius:50px;font-size:14px;font-weight:500;
+  z-index:9999;transition:transform 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+  pointer-events:none;white-space:nowrap;letter-spacing:0.3px;
+}
+#toast.show{transform:translateX(-50%) translateY(0);}
+
+/* NAVBAR */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:18px 6%;display:flex;align-items:center;justify-content:space-between;
+  transition:all 0.4s ease;
+}
+nav.scrolled{
+  background:rgba(15,23,42,0.88);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid rgba(212,175,55,0.18);
+  padding:12px 6%;
+}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.nav-logo-icon{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--maroon),#9a2e2e);
+  border:1.5px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Noto Sans Devanagari',sans-serif;font-size:22px;color:var(--gold);
+  flex-shrink:0;
+}
+.nav-logo-text .site-name{
+  font-family:'Cinzel',serif;font-size:13px;font-weight:600;
+  color:var(--gold);display:block;line-height:1.2;letter-spacing:0.5px;
+}
+.nav-logo-text .site-sub{font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:1.5px;}
+.nav-links{display:flex;align-items:center;gap:4px;}
+.nav-links a{
+  color:rgba(255,255,255,0.8);text-decoration:none;
+  font-size:13px;font-weight:500;padding:7px 15px;
+  border-radius:50px;transition:all 0.2s;
+}
+.nav-links a:hover{color:var(--gold);background:rgba(212,175,55,0.1);}
+.lang-switcher{
+  display:flex;align-items:center;gap:4px;
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(212,175,55,0.3);border-radius:50px;padding:4px;
+}
+.lang-btn{
+  padding:4px 14px;border-radius:50px;border:none;
+  font-size:12px;font-weight:600;cursor:pointer;
+  background:transparent;color:rgba(255,255,255,0.55);
+  transition:all 0.2s;font-family:'Poppins',sans-serif;letter-spacing:0.3px;
+}
+.lang-btn.active{background:var(--gold);color:var(--midnight);}
+.nav-hamburger{
+  display:none;background:transparent;border:none;cursor:pointer;
+  color:white;font-size:22px;padding:4px;
+}
+@media(max-width:768px){
+  .nav-links{
+    display:none;position:fixed;top:70px;left:0;right:0;
+    flex-direction:column;align-items:stretch;
+    background:rgba(10,16,30,0.97);backdrop-filter:blur(20px);
+    padding:16px;gap:4px;border-bottom:1px solid rgba(212,175,55,0.15);
+  }
+  .nav-links.open{display:flex;}
+  .nav-links a{border-radius:10px;padding:12px 16px;}
+  .nav-hamburger{display:block;}
+}
+
+/* HERO */
+#home{
+  min-height:100vh;position:relative;
+  background:linear-gradient(160deg,#08111f 0%,#0d1e3a 25%,#190a0a 55%,#0f172a 100%);
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;text-align:center;
+}
+#particles-canvas{position:absolute;inset:0;z-index:0;}
+.diya-float{
+  position:absolute;font-size:26px;z-index:1;pointer-events:none;
+  animation:floatDiya 5s ease-in-out infinite;
+}
+@keyframes floatDiya{
+  0%,100%{transform:translateY(0) rotate(-6deg);opacity:0.65;}
+  50%{transform:translateY(-22px) rotate(6deg);opacity:1;}
+}
+.hero-content{
+  position:relative;z-index:2;padding:130px 24px 90px;max-width:820px;
+}
+.hero-badge{
+  display:inline-block;border:1px solid rgba(212,175,55,0.45);
+  border-radius:50px;padding:7px 22px;font-size:12px;color:var(--gold);
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:28px;
+  background:rgba(212,175,55,0.07);
+}
+.hero-hindi{
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:clamp(20px,3.5vw,34px);color:var(--gold);
+  display:block;margin-bottom:10px;font-weight:500;line-height:1.4;
+}
+.hero-title{
+  font-family:'Cinzel',serif;
+  font-size:clamp(30px,5.5vw,58px);
+  font-weight:700;color:white;line-height:1.15;margin-bottom:20px;
+}
+.hero-title .gold-text{
+  background:linear-gradient(135deg,#D4AF37,#f5e070,#D4AF37);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{
+  font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,0.65);
+  max-width:580px;margin:0 auto 40px;line-height:1.8;
+}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.btn-gold{
+  padding:14px 34px;border-radius:50px;
+  background:linear-gradient(135deg,#D4AF37,#b8960f);
+  color:var(--midnight);font-weight:600;font-size:14px;
+  text-decoration:none;border:none;cursor:pointer;
+  font-family:'Poppins',sans-serif;transition:all 0.3s;
+  box-shadow:0 4px 24px rgba(212,175,55,0.4);letter-spacing:0.3px;
+}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(212,175,55,0.5);}
+.btn-ghost{
+  padding:14px 34px;border-radius:50px;background:transparent;
+  border:1.5px solid rgba(212,175,55,0.55);color:var(--gold);
+  font-weight:500;font-size:14px;text-decoration:none;cursor:pointer;
+  font-family:'Poppins',sans-serif;transition:all 0.3s;
+}
+.btn-ghost:hover{background:rgba(212,175,55,0.1);border-color:var(--gold);}
+.scroll-ind{
+  position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:2.5px;
+}
+.scroll-pill{
+  width:22px;height:38px;border:1px solid rgba(212,175,55,0.35);
+  border-radius:11px;display:flex;justify-content:center;padding-top:6px;
+}
+.scroll-dot2{
+  width:4px;height:8px;background:var(--gold);border-radius:2px;
+  animation:sdrop 1.6s ease infinite;
+}
+@keyframes sdrop{0%{transform:translateY(0);opacity:1;}100%{transform:translateY(16px);opacity:0;}}
+.wave-hero{position:absolute;bottom:0;left:0;right:0;z-index:1;}
+
+/* SECTIONS */
+section{padding:88px 6%;}
+.sec-label{
+  text-align:center;font-size:11px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--saffron);margin-bottom:12px;font-weight:500;
+}
+.sec-title{
+  text-align:center;font-family:'Cinzel',serif;
+  font-size:clamp(22px,3.5vw,36px);color:var(--text-dark);
+  margin-bottom:12px;font-weight:600;line-height:1.25;
+}
+.sec-hi-title{font-family:'Noto Sans Devanagari',sans-serif;font-size:clamp(18px,3vw,30px);}
+.divider{width:56px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto 52px;border-radius:2px;}
+
+/* SHLOKAS */
+#shlokas{background:var(--midnight);}
+#shlokas .sec-title{color:var(--gold);}
+.shloka-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+.shloka-card{
+  background:rgba(255,255,255,0.035);
+  border:1px solid rgba(212,175,55,0.22);
+  border-radius:20px;padding:32px;position:relative;overflow:hidden;
+  transition:all 0.35s;
+}
+.shloka-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.shloka-card:hover{border-color:rgba(212,175,55,0.48);transform:translateY(-5px);}
+.shloka-num{
+  font-family:'Cinzel',serif;font-size:11px;color:var(--saffron);
+  letter-spacing:2.5px;margin-bottom:18px;display:block;
+}
+.shloka-text{
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:16px;line-height:2;color:#e8c84a;margin-bottom:18px;
+}
+.shloka-meaning{
+  font-size:13px;color:rgba(255,255,255,0.5);line-height:1.75;margin-bottom:20px;
+  border-left:2px solid rgba(212,175,55,0.28);padding-left:14px;
+  font-style:italic;
+}
+.copy-btn{
+  background:rgba(212,175,55,0.09);border:1px solid rgba(212,175,55,0.28);
+  color:var(--gold);padding:7px 18px;border-radius:50px;font-size:12px;
+  cursor:pointer;font-family:'Poppins',sans-serif;transition:all 0.2s;font-weight:500;
+}
+.copy-btn:hover{background:rgba(212,175,55,0.2);border-color:rgba(212,175,55,0.5);}
+
+/* MANTRAS */
+#mantras{background:var(--ivory);}
+.mantras-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;}
+.mantra-card{
+  background:white;border:1px solid rgba(212,175,55,0.18);
+  border-radius:20px;padding:32px 24px;text-align:center;
+  transition:all 0.3s;box-shadow:0 2px 16px rgba(0,0,0,0.05);
+}
+.mantra-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(212,175,55,0.14);border-color:var(--gold);}
+.mantra-text{
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:24px;font-weight:600;color:var(--maroon);margin-bottom:22px;line-height:1.5;
+}
+.mantra-card .copy-btn{
+  background:var(--ivory);color:var(--text-dark);
+  border-color:rgba(0,0,0,0.1);
+}
+.mantra-card .copy-btn:hover{background:var(--gold);color:white;border-color:var(--gold);}
+
+/* IMPORTANCE */
+#importance{background:linear-gradient(135deg,#0f172a 0%,#190a2a 100%);}
+#importance .sec-title{color:white;}
+.importance-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;}
+.imp-card{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.13);
+  border-radius:18px;padding:30px 20px;text-align:center;transition:all 0.3s;
+}
+.imp-card:hover{background:rgba(212,175,55,0.07);border-color:rgba(212,175,55,0.32);transform:translateY(-5px);}
+.imp-icon{font-size:38px;margin-bottom:18px;display:block;}
+.imp-title{
+  font-family:'Cinzel',serif;font-size:13px;font-weight:600;
+  color:var(--gold);margin-bottom:10px;
+}
+.imp-desc{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7;}
+
+/* QUOTE */
+#quote{
+  background:linear-gradient(135deg,var(--maroon) 0%,#3d0f0f 50%,var(--maroon) 100%);
+  text-align:center;padding:88px 12%;
+}
+.quote-om{
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:56px;color:var(--gold);opacity:0.25;margin-bottom:28px;display:block;
+}
+.quote-hi-text{
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:clamp(18px,3vw,28px);color:var(--gold);
+  line-height:1.65;margin-bottom:16px;font-weight:500;
+}
+.quote-en-text{
+  font-family:'Cinzel',serif;font-style:italic;
+  font-size:clamp(14px,2vw,20px);color:rgba(255,255,255,0.7);
+  line-height:1.7;margin-bottom:28px;
+}
+.quote-line{
+  width:40px;height:1px;background:var(--gold);
+  opacity:0.4;margin:0 auto 28px;
+}
+
+/* ABOUT */
+#about{background:var(--temple-white);}
+.about-intro{
+  text-align:center;color:var(--text-muted);font-size:16px;
+  line-height:1.85;max-width:700px;margin:0 auto 52px;
+}
+.timeline{position:relative;max-width:800px;margin:0 auto;}
+.timeline::before{
+  content:'';position:absolute;left:21px;top:0;bottom:0;width:1px;
+  background:linear-gradient(180deg,var(--gold),rgba(212,175,55,0.1));
+}
+.t-item{display:flex;gap:28px;margin-bottom:36px;}
+.t-dot{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--maroon),#9a2e2e);
+  border:2px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;position:relative;z-index:1;
+}
+.t-card{
+  background:white;border:1px solid rgba(212,175,55,0.14);
+  border-radius:18px;padding:26px;flex:1;
+  box-shadow:0 2px 14px rgba(0,0,0,0.055);transition:all 0.3s;
+}
+.t-card:hover{box-shadow:0 8px 28px rgba(212,175,55,0.12);border-color:rgba(212,175,55,0.3);}
+.t-card h3{font-family:'Cinzel',serif;font-size:16px;color:var(--maroon);margin-bottom:10px;}
+.t-card p{font-size:14px;color:var(--text-muted);line-height:1.75;}
+
+/* TIMINGS */
+#timings{background:var(--midnight);}
+#timings .sec-title{color:var(--gold);}
+.timing-wrap{max-width:640px;margin:0 auto;text-align:center;}
+.timing-main{
+  background:linear-gradient(135deg,rgba(122,30,30,0.35),rgba(15,76,129,0.18),rgba(212,175,55,0.08));
+  border:1px solid rgba(212,175,55,0.38);border-radius:28px;
+  padding:52px 40px;margin-bottom:28px;position:relative;overflow:hidden;
+}
+.timing-main::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.timing-main::after{
+  content:'ॐ';position:absolute;right:24px;bottom:16px;
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:64px;color:rgba(212,175,55,0.06);
+}
+.t-badge{
+  font-size:11px;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--saffron);margin-bottom:24px;display:block;font-weight:500;
+}
+.t-clock{
+  font-family:'Cinzel',serif;
+  font-size:clamp(52px,10vw,82px);font-weight:700;color:var(--gold);
+  margin-bottom:14px;line-height:1;
+  text-shadow:0 0 48px rgba(212,175,55,0.35);
+}
+.t-name-hi{
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:24px;color:white;margin-bottom:24px;
+}
+.t-desc{font-size:14px;color:rgba(255,255,255,0.58);line-height:1.8;}
+.t-notice{
+  background:rgba(255,153,51,0.09);
+  border:1px solid rgba(255,153,51,0.28);
+  border-radius:14px;padding:18px 22px;
+  font-size:13px;color:rgba(255,255,255,0.7);
+  line-height:1.75;margin-bottom:44px;text-align:left;
+}
+.t-notice strong{color:var(--saffron);}
+.exp-title-h{
+  font-family:'Cinzel',serif;color:var(--gold);
+  text-align:center;margin-bottom:28px;font-size:16px;font-weight:600;
+}
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;}
+.exp-card{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.14);
+  border-radius:14px;padding:22px 16px;text-align:center;transition:all 0.3s;
+}
+.exp-card:hover{border-color:rgba(212,175,55,0.38);background:rgba(212,175,55,0.06);}
+.exp-icon{font-size:30px;margin-bottom:10px;display:block;}
+.exp-label{font-size:13px;font-weight:500;color:rgba(255,255,255,0.75);}
+
+/* GALLERY */
+#gallery{background:var(--ivory);}
+.gal-filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:36px;}
+.gf-btn{
+  padding:8px 22px;border-radius:50px;border:1px solid rgba(0,0,0,0.1);
+  background:white;color:var(--text-dark);font-size:13px;cursor:pointer;
+  font-family:'Poppins',sans-serif;transition:all 0.2s;font-weight:500;
+}
+.gf-btn.active,.gf-btn:hover{background:var(--gold);color:white;border-color:var(--gold);}
+.gal-masonry{columns:3;column-gap:16px;}
+@media(max-width:768px){.gal-masonry{columns:2;}}
+@media(max-width:480px){.gal-masonry{columns:1;}}
+.gal-item{
+  break-inside:avoid;margin-bottom:16px;border-radius:16px;overflow:hidden;
+  position:relative;cursor:pointer;transition:transform 0.3s;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+}
+.gal-item:hover{transform:scale(1.025);}
+.gal-item:hover .gal-ov{opacity:1;}
+.gal-ph{
+  width:100%;padding:44px 20px;text-align:center;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  min-height:180px;
+}
+.gal-ph-icon{font-size:42px;opacity:0.55;}
+.gal-ph-lbl{font-size:11px;letter-spacing:1.5px;color:rgba(255,255,255,0.45);font-weight:500;}
+.gal-ov{
+  position:absolute;inset:0;background:rgba(15,23,42,0.55);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transition:opacity 0.3s;font-size:30px;color:var(--gold);
+}
+.gal-note{text-align:center;margin-top:28px;font-size:13px;color:var(--text-muted);}
+
+/* CONTACT */
+#contact{background:var(--temple-white);}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:920px;margin:0 auto;}
+@media(max-width:768px){.contact-wrap{grid-template-columns:1fr;}}
+.contact-info h3,.contact-form h3{
+  font-family:'Cinzel',serif;font-size:20px;color:var(--maroon);margin-bottom:28px;
+}
+.c-detail{display:flex;gap:16px;margin-bottom:22px;align-items:flex-start;}
+.c-icon{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--maroon),#9a2e2e);
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+}
+.c-txt .c-lbl{font-size:12px;color:#94a3b8;margin-bottom:3px;}
+.c-txt .c-val{font-size:14px;font-weight:500;color:var(--text-dark);line-height:1.5;}
+.map-wrap{
+  width:100%;height:220px;border-radius:18px;overflow:hidden;
+  border:1px solid rgba(0,0,0,0.08);margin-top:24px;
+}
+.map-wrap iframe{width:100%;height:100%;border:none;}
+.form-g{margin-bottom:18px;}
+.form-g label{display:block;font-size:13px;font-weight:500;color:var(--text-dark);margin-bottom:7px;}
+.form-g input,.form-g textarea{
+  width:100%;padding:12px 18px;
+  border:1px solid rgba(0,0,0,0.1);border-radius:14px;
+  font-family:'Poppins',sans-serif;font-size:14px;color:var(--text-dark);
+  background:white;outline:none;transition:border-color 0.25s;
+}
+.form-g input:focus,.form-g textarea:focus{border-color:var(--gold);}
+.form-g textarea{height:110px;resize:vertical;}
+.form-submit{
+  width:100%;padding:15px;border-radius:50px;
+  background:linear-gradient(135deg,var(--maroon),#9a2e2e);
+  color:white;font-size:15px;font-weight:600;border:none;
+  cursor:pointer;font-family:'Poppins',sans-serif;transition:all 0.3s;
+  letter-spacing:0.4px;
+}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(122,30,30,0.3);}
+
+/* FOOTER */
+footer{
+  background:linear-gradient(160deg,#080e1c 0%,#0f172a 45%,#1a0800 100%);
+  border-top:1px solid rgba(212,175,55,0.14);
+  padding:64px 6% 32px;
+}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px;margin-bottom:48px;}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr;gap:32px;}}
+.footer-brand .f-om{
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:40px;color:var(--gold);display:block;margin-bottom:14px;
+}
+.footer-brand .f-name{
+  font-family:'Cinzel',serif;font-size:16px;color:var(--gold);margin-bottom:12px;display:block;
+}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.8;max-width:270px;}
+.f-col h4{
+  font-family:'Cinzel',serif;font-size:14px;color:var(--gold);
+  margin-bottom:20px;letter-spacing:0.5px;
+}
+.f-col ul{list-style:none;}
+.f-col ul li{margin-bottom:12px;}
+.f-col ul li a{
+  color:rgba(255,255,255,0.45);text-decoration:none;font-size:13px;transition:color 0.2s;
+}
+.f-col ul li a:hover{color:var(--gold);}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.07);padding-top:28px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+}
+.f-copy{font-size:12px;color:rgba(255,255,255,0.3);}
+.f-quote{
+  font-family:'Noto Sans Devanagari',sans-serif;
+  font-size:20px;color:var(--gold);
+}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}
+.reveal-delay-2{transition-delay:0.2s;}
+.reveal-delay-3{transition-delay:0.3s;}
+
+/* AARTI LYRICS */
+#aarti-lyrics{background:linear-gradient(160deg,#090e1c 0%,#1a0404 55%,#0d1526 100%);padding:88px 6%;}
+#aarti-lyrics .sec-title{color:var(--gold);}
+.aarti-intro{text-align:center;max-width:580px;margin:0 auto 48px;font-size:14px;color:rgba(255,255,255,0.48);line-height:1.85;}
+.aarti-container{max-width:700px;margin:0 auto;}
+.aarti-refrain{
+  background:linear-gradient(135deg,rgba(122,30,30,0.28),rgba(212,175,55,0.07));
+  border:1px solid rgba(212,175,55,0.38);border-radius:20px;
+  padding:28px 32px;text-align:center;margin-bottom:28px;position:relative;
+}
+.aarti-refrain::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border-radius:20px 20px 0 0;}
+.refrain-label{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--saffron);margin-bottom:14px;display:block;font-weight:500;}
+.refrain-text{font-family:'Noto Sans Devanagari',sans-serif;font-size:19px;line-height:2.1;color:var(--gold);font-weight:600;}
+.aarti-verse{
+  background:rgba(255,255,255,0.025);border:1px solid rgba(212,175,55,0.12);
+  border-radius:16px;padding:24px 28px;margin-bottom:14px;
+  display:grid;grid-template-columns:32px 1fr;gap:16px;align-items:start;
+  transition:all 0.3s;
+}
+.aarti-verse:hover{border-color:rgba(212,175,55,0.28);background:rgba(212,175,55,0.03);}
+.verse-num{font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:var(--saffron);padding-top:6px;text-align:center;}
+.verse-hi{font-family:'Noto Sans Devanagari',sans-serif;font-size:16px;line-height:2.1;color:rgba(255,255,255,0.88);margin-bottom:10px;}
+.verse-meaning{font-size:12px;color:rgba(255,255,255,0.36);line-height:1.7;border-left:2px solid rgba(212,175,55,0.2);padding-left:12px;font-style:italic;margin-bottom:10px;}
+.verse-refrain{font-family:'Noto Sans Devanagari',sans-serif;font-size:13px;color:rgba(212,175,55,0.5);font-style:italic;}
+.diya-divider{text-align:center;font-size:16px;margin:18px 0;letter-spacing:10px;opacity:0.4;}
+.aarti-ending{text-align:center;margin-top:32px;padding:28px 24px;border:1px solid rgba(212,175,55,0.18);border-radius:18px;background:rgba(255,255,255,0.02);}
+.aarti-ending-text{font-family:'Noto Sans Devanagari',sans-serif;font-size:22px;color:var(--gold);font-weight:600;line-height:1.9;margin-bottom:22px;}
+.aarti-copy-all{background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);color:var(--gold);padding:10px 26px;border-radius:50px;font-size:13px;cursor:pointer;font-family:'Poppins',sans-serif;transition:all 0.2s;font-weight:500;}
+.aarti-copy-all:hover{background:rgba(212,175,55,0.22);}
+</style>
+</head>
+<body>
+
+<!-- TOAST -->
+<div id="toast">✓ <span id="toastMsg">Copied!</span></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="nav-logo-icon">ॐ</div>
+    <div class="nav-logo-text">
+      <span class="site-name">Ramkrishnapur Ghat</span>
+      <span class="site-sub">GANGA AARTI · HOWRAH</span>
+    </div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#home"><span class="ien">Home</span><span class="ihi">होम</span></a>
+    <a href="#about"><span class="ien">About</span><span class="ihi">परिचय</span></a>
+    <a href="#timings"><span class="ien">Aarti Timings</span><span class="ihi">आरती समय</span></a>
+    <a href="#aarti-lyrics"><span class="ien">Aarti Lyrics</span><span class="ihi">आरती पाठ</span></a>
+    <a href="#gallery"><span class="ien">Gallery</span><span class="ihi">गैलरी</span></a>
+    <a href="#contact"><span class="ien">Contact</span><span class="ihi">संपर्क</span></a>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div class="lang-switcher">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-hi" onclick="setLang('hi')">हि</button>
+    </div>
+    <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="home">
+  <canvas id="particles-canvas"></canvas>
+  <span class="diya-float" style="left:7%;top:32%;animation-delay:0s">🪔</span>
+  <span class="diya-float" style="right:8%;top:38%;animation-delay:1.8s">🪔</span>
+  <span class="diya-float" style="left:18%;bottom:28%;animation-delay:3.2s">🪔</span>
+  <span class="diya-float" style="right:15%;bottom:22%;animation-delay:0.9s">🪔</span>
+  <span class="diya-float" style="left:4%;top:58%;animation-delay:2.4s;font-size:18px">🪔</span>
+  <span class="diya-float" style="right:4%;top:62%;animation-delay:1.2s;font-size:18px">🪔</span>
+  <div class="hero-content reveal">
+    <div class="hero-badge">🙏 &nbsp;Howrah, West Bengal, India</div>
+    <span class="hero-hindi lang-hi">माँ गंगा की दिव्य आरती का अनुभव करें</span>
+    <h1 class="hero-title lang-en">Experience the<br><span class="gold-text">Divine Ganga Aarti</span></h1>
+    <p class="hero-sub lang-en">Ramkrishnapur Ghat, Howrah — Where devotion meets the eternal flow of Maa Ganga.</p>
+    <p class="hero-sub lang-hi">रामकृष्णापुर घाट, हावड़ा — जहाँ श्रद्धा माँ गंगा की अनन्त पावन धारा से मिलती है।</p>
+    <div class="hero-btns">
+      <a href="#about" class="btn-gold"><span class="ien">Explore Aarti</span><span class="ihi">आरती जानें</span></a>
+      <a href="#timings" class="btn-ghost"><span class="ien">View Timings</span><span class="ihi">समय देखें</span></a>
+    </div>
+  </div>
+  <div class="scroll-ind">
+    <div class="scroll-pill"><div class="scroll-dot2"></div></div>
+    <span class="ien">SCROLL</span><span class="ihi">नीचे जाएं</span>
+  </div>
+  <div class="wave-hero">
+    <svg viewBox="0 0 1440 64" preserveAspectRatio="none" style="width:100%;display:block;height:64px;" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,32 C480,80 960,0 1440,32 L1440,64 L0,64 Z" fill="#FFF8E7"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══ SHLOKAS ═══ -->
+<section id="shlokas">
+  <div class="sec-label">🕉 Sacred Verses</div>
+  <h2 class="sec-title" style="color:var(--gold)">
+    <span class="lang-en">Sanskrit Shlokas</span>
+    <span class="lang-hi sec-hi-title">संस्कृत श्लोक</span>
+  </h2>
+  <div class="divider"></div>
+  <div class="shloka-grid">
+    <div class="shloka-card reveal">
+      <span class="shloka-num">SHLOKA I</span>
+      <div class="shloka-text">गंगे च यमुने चैव गोदावरि सरस्वति।<br>नर्मदे सिन्धु कावेरी जलेऽस्मिन् सन्निधिं कुरु॥</div>
+      <div class="shloka-meaning">Invocation of all sacred rivers. O Ganga, Yamuna, Godavari, Saraswati, Narmada, Sindhu, and Kaveri — please be present in this holy water.</div>
+      <button class="copy-btn" onclick="copyText('गंगे च यमुने चैव गोदावरि सरस्वति।\nनर्मदे सिन्धु कावेरी जलेऽस्मिन् सन्निधिं कुरु॥','shloka')">📋 <span class="ien">Copy Shloka</span><span class="ihi">कॉपी करें</span></button>
+    </div>
+    <div class="shloka-card reveal reveal-delay-1">
+      <span class="shloka-num">SHLOKA II</span>
+      <div class="shloka-text">देवि सुरेश्वरि भगवति गंगे<br>त्रिभुवन तारिणि तरल तरंगे।<br>शङ्करमौलिविहारिणि विमले<br>मम मतिरास्तां तव पदकमले॥</div>
+      <div class="shloka-meaning">Prayer to Maa Ganga seeking blessings and purification. O divine Ganga, purifier of the three worlds, let my mind rest at your lotus feet.</div>
+      <button class="copy-btn" onclick="copyText('देवि सुरेश्वरि भगवति गंगे\nत्रिभुवन तारिणि तरल तरंगे।\nशङ्करमौलिविहारिणि विमले\nमम मतिरास्तां तव पदकमले॥','shloka')">📋 <span class="ien">Copy Shloka</span><span class="ihi">कॉपी करें</span></button>
+    </div>
+    <div class="shloka-card reveal reveal-delay-2">
+      <span class="shloka-num">SHLOKA III</span>
+      <div class="shloka-text">पतितोद्धारिणि गंगे<br>खण्डित गिरिवर मण्डित भंगे।<br>भीष्मजननि मुनिवरकन्ये<br>पतित निवारिणि त्रिभुवन धन्ये॥</div>
+      <div class="shloka-meaning">Praise of Maa Ganga as purifier and savior of the fallen. O Ganga, mother of Bhishma, redeemer of the sinful, blessed across the three worlds.</div>
+      <button class="copy-btn" onclick="copyText('पतितोद्धारिणि गंगे\nखण्डित गिरिवर मण्डित भंगे।\nभीष्मजननि मुनिवरकन्ये\nपतित निवारिणि त्रिभुवन धन्ये॥','shloka')">📋 <span class="ien">Copy Shloka</span><span class="ihi">कॉपी करें</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MANTRAS ═══ -->
+<section id="mantras">
+  <div class="sec-label">Daily Chants</div>
+  <h2 class="sec-title">
+    <span class="lang-en">Sacred Mantras</span>
+    <span class="lang-hi sec-hi-title">पवित्र मंत्र</span>
+  </h2>
+  <div class="divider"></div>
+  <div class="mantras-grid">
+    <div class="mantra-card reveal">
+      <div class="mantra-text">ॐ नमः शिवाय</div>
+      <button class="copy-btn" onclick="copyText('ॐ नमः शिवाय','mantra')">📋 <span class="ien">Copy</span><span class="ihi">कॉपी</span></button>
+    </div>
+    <div class="mantra-card reveal reveal-delay-1">
+      <div class="mantra-text">हर हर गंगे</div>
+      <button class="copy-btn" onclick="copyText('हर हर गंगे','mantra')">📋 <span class="ien">Copy</span><span class="ihi">कॉपी</span></button>
+    </div>
+    <div class="mantra-card reveal reveal-delay-2">
+      <div class="mantra-text">ॐ गंगायै नमः</div>
+      <button class="copy-btn" onclick="copyText('ॐ गंगायै नमः','mantra')">📋 <span class="ien">Copy</span><span class="ihi">कॉपी</span></button>
+    </div>
+    <div class="mantra-card reveal reveal-delay-3">
+      <div class="mantra-text">जय माँ गंगे</div>
+      <button class="copy-btn" onclick="copyText('जय माँ गंगे','mantra')">📋 <span class="ien">Copy</span><span class="ihi">कॉपी</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ IMPORTANCE ═══ -->
+<section id="importance">
+  <div class="sec-label" style="color:var(--saffron)">Why Visit</div>
+  <h2 class="sec-title" style="color:white">
+    <span class="lang-en">Importance of Ganga Aarti</span>
+    <span class="lang-hi sec-hi-title">गंगा आरती का महत्व</span>
+  </h2>
+  <div class="divider"></div>
+  <div class="importance-grid">
+    <div class="imp-card reveal"><span class="imp-icon">🕊</span><div class="imp-title">Spiritual Purification</div><div class="imp-desc">Cleanse mind and soul with Maa Ganga's divine energy and sacred waters</div></div>
+    <div class="imp-card reveal reveal-delay-1"><span class="imp-icon">🏛</span><div class="imp-title">Cultural Heritage</div><div class="imp-desc">A living tradition of Bengal's rich spiritual and cultural legacy</div></div>
+    <div class="imp-card reveal reveal-delay-2"><span class="imp-icon">🙏</span><div class="imp-title">Devotional Gathering</div><div class="imp-desc">Unite with devotees in collective prayer, bhakti and community</div></div>
+    <div class="imp-card reveal"><span class="imp-icon">🌊</span><div class="imp-title">River Worship</div><div class="imp-desc">Honor Maa Ganga, the sacred lifeline and eternal mother of India</div></div>
+    <div class="imp-card reveal reveal-delay-1"><span class="imp-icon">📿</span><div class="imp-title">Vedic Traditions</div><div class="imp-desc">Experience ancient Vedic rituals preserved through countless generations</div></div>
+    <div class="imp-card reveal reveal-delay-2"><span class="imp-icon">✨</span><div class="imp-title">Divine Blessings</div><div class="imp-desc">Receive grace and blessings of Maa Ganga for peace and prosperity</div></div>
+  </div>
+</section>
+
+<!-- ═══ QUOTE ═══ -->
+<section id="quote">
+  <div class="quote-om" aria-hidden="true">ॐ</div>
+  <div class="quote-line"></div>
+  <div class="quote-hi-text reveal">"गंगा केवल एक नदी नहीं, बल्कि भारत की आध्यात्मिक धारा है।"</div>
+  <div class="quote-en-text reveal">"The Ganga is not merely a river; it is the spiritual lifeline of India."</div>
+  <div style="display:flex;justify-content:center;">
+    <button class="copy-btn" style="border-color:rgba(255,255,255,0.25);color:rgba(255,255,255,0.75);" onclick="copyText('गंगा केवल एक नदी नहीं, बल्कि भारत की आध्यात्मिक धारा है। | The Ganga is not merely a river; it is the spiritual lifeline of India.','quote')">📋 <span class="ien">Copy Quote</span><span class="ihi">उद्धरण कॉपी करें</span></button>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="sec-label">Our Story</div>
+  <h2 class="sec-title">
+    <span class="lang-en">About Ramkrishnapur Ghat</span>
+    <span class="lang-hi sec-hi-title">रामकृष्णापुर घाट के बारे में</span>
+  </h2>
+  <div class="divider"></div>
+  <p class="about-intro reveal">Nestled on the sacred banks of the Hooghly River in Howrah, Ramkrishnapur Ghat is a place where the divine and the mortal converge every evening in an atmosphere of profound devotion, ancient Vedic rituals, and timeless spirituality.</p>
+  <div class="timeline">
+    <div class="t-item reveal">
+      <div class="t-dot">🏛</div>
+      <div class="t-card">
+        <h3>Sacred Location</h3>
+        <p>Ramkrishnapur Ghat is situated on the western bank of the Hooghly River in Howrah, West Bengal — offering a serene riverfront setting for daily worship, spiritual gatherings, and community celebrations.</p>
+      </div>
+    </div>
+    <div class="t-item reveal">
+      <div class="t-dot">🌊</div>
+      <div class="t-card">
+        <h3>Significance of Maa Ganga</h3>
+        <p>The River Ganga, known as Hooghly in this region, holds immense religious importance in Hindu tradition. Bathing in her waters is believed to cleanse sins and grant moksha — liberation from the cycle of birth and death.</p>
+      </div>
+    </div>
+    <div class="t-item reveal">
+      <div class="t-dot">🪔</div>
+      <div class="t-card">
+        <h3>Evening Aarti Tradition</h3>
+        <p>Every evening as the sun sets over the Hooghly, the ghat comes alive with melodious temple bells, conch shells, and Vedic chants. Priests perform the sacred Ganga Aarti with large lamps, incense, flowers, and deep devotion.</p>
+      </div>
+    </div>
+    <div class="t-item reveal">
+      <div class="t-dot">🎶</div>
+      <div class="t-card">
+        <h3>Cultural Heart of Howrah</h3>
+        <p>This ghat serves as a spiritual and cultural hub for the people of Howrah, hosting major festivals like Chhath Puja, Ganga Dussehra, Kartik Purnima, and various religious gatherings throughout the year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ AARTI TIMINGS ═══ -->
+<section id="timings">
+  <div class="sec-label" style="color:var(--saffron)">Daily Schedule</div>
+  <h2 class="sec-title" style="color:var(--gold)">
+    <span class="lang-en">Ganga Aarti Timings</span>
+    <span class="lang-hi sec-hi-title">गंगा आरती समय</span>
+  </h2>
+  <div class="divider"></div>
+  <div class="timing-wrap">
+    <div class="timing-main reveal">
+      <span class="t-badge">🪔 &nbsp;EVENING GANGA AARTI &nbsp;·&nbsp; SANDHYA AARTI</span>
+      <div class="t-clock">6:30 PM</div>
+      <div class="t-name-hi">संध्या आरती</div>
+      <div class="t-desc">The sacred Ganga Aarti is performed every evening at Ramkrishnapur Ghat with Vedic chants, devotional hymns, temple bells, incense offerings, sacred lamps, and heartfelt prayers dedicated to Maa Ganga.</div>
+    </div>
+    <div class="t-notice reveal">
+      <strong>⚠ Important Notice:</strong> Visitors are requested to arrive at least <strong>15–30 minutes</strong> before the scheduled Aarti. Timings may vary seasonally or during festivals. Festival days may have special timings — please confirm locally before visiting.
+    </div>
+    <div class="exp-title-h">Aarti Experience</div>
+    <div class="exp-grid">
+      <div class="exp-card reveal"><span class="exp-icon">🪔</span><div class="exp-label">Deep Daan</div></div>
+      <div class="exp-card reveal reveal-delay-1"><span class="exp-icon">🔔</span><div class="exp-label">Temple Bells</div></div>
+      <div class="exp-card reveal reveal-delay-2"><span class="exp-icon">📿</span><div class="exp-label">Vedic Mantras</div></div>
+      <div class="exp-card reveal"><span class="exp-icon">🌊</span><div class="exp-label">Maa Ganga Worship</div></div>
+      <div class="exp-card reveal reveal-delay-1"><span class="exp-icon">🙏</span><div class="exp-label">Devotional Prayers</div></div>
+      <div class="exp-card reveal reveal-delay-2"><span class="exp-icon">✨</span><div class="exp-label">Spiritual Blessings</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section id="gallery">
+  <div class="sec-label">Visual Journey</div>
+  <h2 class="sec-title">
+    <span class="lang-en">Photo Gallery</span>
+    <span class="lang-hi sec-hi-title">फोटो गैलरी</span>
+  </h2>
+  <div class="divider"></div>
+  <div class="gal-filters">
+    <button class="gf-btn active" onclick="filterGal(this,'all')">All</button>
+    <button class="gf-btn" onclick="filterGal(this,'aarti')">Ganga Aarti</button>
+    <button class="gf-btn" onclick="filterGal(this,'ghat')">Ramkrishnapur Ghat</button>
+    <button class="gf-btn" onclick="filterGal(this,'river')">River Ganga</button>
+    <button class="gf-btn" onclick="filterGal(this,'lamps')">Evening Lamps</button>
+    <button class="gf-btn" onclick="filterGal(this,'devotees')">Devotees</button>
+    <button class="gf-btn" onclick="filterGal(this,'festivals')">Festivals</button>
+  </div>
+  <div class="gal-masonry" id="galGrid">
+    <div class="gal-item" data-cat="aarti" style="background:linear-gradient(135deg,#5a1010,#2a0808)"><div class="gal-ph"><span class="gal-ph-icon">🪔</span><span class="gal-ph-lbl">GANGA AARTI</span></div><div class="gal-ov">🔍</div></div>
+    <div class="gal-item" data-cat="river" style="background:linear-gradient(135deg,#0d3b6e,#061a34);min-height:240px"><div class="gal-ph"><span class="gal-ph-icon">🌊</span><span class="gal-ph-lbl">RIVER GANGA</span></div><div class="gal-ov">🔍</div></div>
+    <div class="gal-item" data-cat="devotees" style="background:linear-gradient(135deg,#1a0d3a,#0d0820)"><div class="gal-ph"><span class="gal-ph-icon">🙏</span><span class="gal-ph-lbl">DEVOTEES</span></div><div class="gal-ov">🔍</div></div>
+    <div class="gal-item" data-cat="lamps" style="background:linear-gradient(135deg,#4a2a00,#1f1000);min-height:210px"><div class="gal-ph"><span class="gal-ph-icon">✨</span><span class="gal-ph-lbl">EVENING LAMPS</span></div><div class="gal-ov">🔍</div></div>
+    <div class="gal-item" data-cat="ghat" style="background:linear-gradient(135deg,#0a2e1e,#051510)"><div class="gal-ph"><span class="gal-ph-icon">🏛</span><span class="gal-ph-lbl">RAMKRISHNAPUR GHAT</span></div><div class="gal-ov">🔍</div></div>
+    <div class="gal-item" data-cat="festivals" style="background:linear-gradient(135deg,#2a103a,#120520);min-height:250px"><div class="gal-ph"><span class="gal-ph-icon">🎆</span><span class="gal-ph-lbl">FESTIVALS</span></div><div class="gal-ov">🔍</div></div>
+    <div class="gal-item" data-cat="aarti" style="background:linear-gradient(135deg,#5a1010,#0d3b6e)"><div class="gal-ph"><span class="gal-ph-icon">🔔</span><span class="gal-ph-lbl">DEEP DAAN</span></div><div class="gal-ov">🔍</div></div>
+    <div class="gal-item" data-cat="devotees" style="background:linear-gradient(135deg,#1a2a1a,#0a150a);min-height:190px"><div class="gal-ph"><span class="gal-ph-icon">📿</span><span class="gal-ph-lbl">VEDIC RITUALS</span></div><div class="gal-ov">🔍</div></div>
+    <div class="gal-item" data-cat="lamps" style="background:linear-gradient(135deg,#2a1a00,#150d00)"><div class="gal-ph"><span class="gal-ph-icon">🪔</span><span class="gal-ph-lbl">LAMP OFFERINGS</span></div><div class="gal-ov">🔍</div></div>
+  </div>
+  <p class="gal-note">Add your beautiful photos of Ramkrishnapur Ghat to this gallery — <a href="#contact" style="color:var(--maroon);">contact us</a> to contribute.</p>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="sec-label">Get in Touch</div>
+  <h2 class="sec-title">
+    <span class="lang-en">Contact Us</span>
+    <span class="lang-hi sec-hi-title">हमसे संपर्क करें</span>
+  </h2>
+  <div class="divider"></div>
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <h3>Find Us</h3>
+      <div class="c-detail">
+        <div class="c-icon">📍</div>
+        <div class="c-txt">
+          <div class="c-lbl">Address</div>
+          <div class="c-val">Ramkrishnapur Ghat, Howrah,<br>West Bengal, India</div>
+        </div>
+      </div>
+      <div class="c-detail">
+        <div class="c-icon">📞</div>
+        <div class="c-txt">
+          <div class="c-lbl">Phone</div>
+          <div class="c-val">+91 XXXXX XXXXX</div>
+        </div>
+      </div>
+      <div class="c-detail">
+        <div class="c-icon">✉</div>
+        <div class="c-txt">
+          <div class="c-lbl">Email</div>
+          <div class="c-val">info@ramkrishnapurghat.in</div>
+        </div>
+      </div>
+      <div class="c-detail">
+        <div class="c-icon">🕐</div>
+        <div class="c-txt">
+          <div class="c-lbl">Evening Aarti</div>
+          <div class="c-val">Every Evening — 6:30 PM</div>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://maps.google.com/maps?q=Ramkrishnapur+Ghat+Howrah+West+Bengal+India&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen title="Ramkrishnapur Ghat Location"></iframe>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <h3>Send a Message</h3>
+      <div class="form-g">
+        <label><span class="ien">Your Name</span><span class="ihi">आपका नाम</span></label>
+        <input type="text" placeholder="Enter your name">
+      </div>
+      <div class="form-g">
+        <label><span class="ien">Email Address</span><span class="ihi">ईमेल पता</span></label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="form-g">
+        <label><span class="ien">Message</span><span class="ihi">संदेश</span></label>
+        <textarea placeholder="Write your message here..."></textarea>
+      </div>
+      <button class="form-submit" onclick="handleForm()">
+        🙏 <span class="ien">Send Message</span><span class="ihi">संदेश भेजें</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GANGA AARTI LYRICS ═══ -->
+<section id="aarti-lyrics">
+  <div class="sec-label" style="color:var(--saffron)">🪔 Complete Aarti</div>
+  <h2 class="sec-title">
+    <span class="lang-en">Ganga Aarti — Full Lyrics</span>
+    <span class="lang-hi sec-hi-title">गंगा आरती — सम्पूर्ण पाठ</span>
+  </h2>
+  <div class="divider"></div>
+  <p class="aarti-intro">Yeh hai Maa Ganga ki sampurn aarti — shuru se aakhir tak. Har sham 6:30 baje Ramkrishnapur Ghat par gayi jaati hai.</p>
+
+  <div class="aarti-container">
+
+    <!-- DHUN / REFRAIN -->
+    <div class="aarti-refrain reveal">
+      <span class="refrain-label">🎵 Main Dhun — Refrain (har pankti ke baad doharaaen)</span>
+      <div class="refrain-text">
+        ॐ जय गंगे माता, मैया जय गंगे माता।<br>
+        जो नर तुमको ध्याता, मन वांछित फल पाता॥
+      </div>
+    </div>
+
+    <div class="diya-divider">🪔 🪔 🪔</div>
+
+    <!-- VERSE 1 -->
+    <div class="aarti-verse reveal">
+      <div class="verse-num">१</div>
+      <div class="verse-content">
+        <div class="verse-hi">
+          चंद्र सी जोत तुम्हारी, जल निर्मल आता।<br>
+          शरण पड़े जो तेरी, सो नर तर जाता॥
+        </div>
+        <div class="verse-meaning">Your radiance is like the moon, your water is pure and holy. Whoever takes refuge in you, they cross the ocean of life.</div>
+        <div class="verse-refrain">↩ ॐ जय गंगे माता, मैया जय गंगे माता...</div>
+      </div>
+    </div>
+
+    <!-- VERSE 2 -->
+    <div class="aarti-verse reveal">
+      <div class="verse-num">२</div>
+      <div class="verse-content">
+        <div class="verse-hi">
+          पुत्र सगर के तारे, सब जग को ज्ञाता।<br>
+          कृपा दृष्टि हो तुम्हारी, त्रिभुवन सुख दाता॥
+        </div>
+        <div class="verse-meaning">You liberated the sons of King Sagar, you are known to the whole world. With your gracious gaze, you bestow happiness in all three worlds.</div>
+        <div class="verse-refrain">↩ ॐ जय गंगे माता, मैया जय गंगे माता...</div>
+      </div>
+    </div>
+
+    <!-- VERSE 3 -->
+    <div class="aarti-verse reveal">
+      <div class="verse-num">३</div>
+      <div class="verse-content">
+        <div class="verse-hi">
+          एक बार जो प्राणी, शरण तेरी आता।<br>
+          यम की त्रास मिटाकर, परमपद पाता॥
+        </div>
+        <div class="verse-meaning">Whoever comes to your shelter even once — you remove the fear of Yamraj (death) and help them attain the highest spiritual state.</div>
+        <div class="verse-refrain">↩ ॐ जय गंगे माता, मैया जय गंगे माता...</div>
+      </div>
+    </div>
+
+    <!-- VERSE 4 -->
+    <div class="aarti-verse reveal">
+      <div class="verse-num">४</div>
+      <div class="verse-content">
+        <div class="verse-hi">
+          आरती मात तुम्हारी, जो नर नित गाता।<br>
+          सेवक वो तुम्हारा, अपार सुख पाता॥
+        </div>
+        <div class="verse-meaning">Whoever sings your aarti daily, O Mother — that devotee becomes your servant and receives infinite happiness and blessings.</div>
+        <div class="verse-refrain">↩ ॐ जय गंगे माता, मैया जय गंगे माता...</div>
+      </div>
+    </div>
+
+    <!-- VERSE 5 -->
+    <div class="aarti-verse reveal">
+      <div class="verse-num">५</div>
+      <div class="verse-content">
+        <div class="verse-hi">
+          हर हर गंगे बोलो, मन में हर्ष समाता।<br>
+          पाप ताप सब नाशे, परम ज्योत पाता॥
+        </div>
+        <div class="verse-meaning">Chant "Har Har Gange" and your heart fills with joy. All sins and sorrows are destroyed, and the divine light is attained.</div>
+        <div class="verse-refrain">↩ ॐ जय गंगे माता, मैया जय गंगे माता...</div>
+      </div>
+    </div>
+
+    <!-- VERSE 6 -->
+    <div class="aarti-verse reveal">
+      <div class="verse-num">६</div>
+      <div class="verse-content">
+        <div class="verse-hi">
+          ब्रह्मा विष्णु शिवादि, सब तेरे गुण गाता।<br>
+          नारद ऋषि मुनि जन, मन में तुम्हें ध्याता॥
+        </div>
+        <div class="verse-meaning">Brahma, Vishnu, and Shiva all sing your praises. Sage Narada and all holy sages meditate upon you in their hearts.</div>
+        <div class="verse-refrain">↩ ॐ जय गंगे माता, मैया जय गंगे माता...</div>
+      </div>
+    </div>
+
+    <!-- VERSE 7 -->
+    <div class="aarti-verse reveal">
+      <div class="verse-num">७</div>
+      <div class="verse-content">
+        <div class="verse-hi">
+          चार पदारथ देती, जो जन तुम्हें ध्याता।<br>
+          धर्म अर्थ मोक्ष काम, तुमसे नर पाता॥
+        </div>
+        <div class="verse-meaning">You bestow the four fruits of life — Dharma (righteousness), Artha (wealth), Moksha (liberation), and Kama (desires) — to all who worship you.</div>
+        <div class="verse-refrain">↩ ॐ जय गंगे माता, मैया जय गंगे माता...</div>
+      </div>
+    </div>
+
+    <div class="diya-divider">🪔 🪔 🪔</div>
+
+    <!-- ENDING -->
+    <div class="aarti-ending reveal">
+      <div class="aarti-ending-text">
+        ॐ जय गंगे माता, मैया जय गंगे माता।<br>
+        जो नर तुमको ध्याता, मन वांछित फल पाता॥<br><br>
+        <span style="font-size:26px;letter-spacing:6px;">हर हर गंगे 🙏</span><br>
+        <span style="font-size:26px;letter-spacing:6px;">जय माँ गंगे 🙏</span>
+      </div>
+      <button class="aarti-copy-all" onclick="copyAarti()">📋 <span class="ien">Copy Full Aarti</span><span class="ihi">पूरी आरती कॉपी करें</span></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="f-om">ॐ</span>
+      <span class="f-name">Ramkrishnapur Ghat — Howrah</span>
+      <p>A sacred space where the divine energy of Maa Ganga blesses all who come with faith and devotion. Located on the banks of the Hooghly River, Howrah, West Bengal, India.</p>
+    </div>
+    <div class="f-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#timings">Aarti Timings</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">📘 Facebook</a></li>
+        <li><a href="#">📷 Instagram</a></li>
+        <li><a href="#">▶ YouTube</a></li>
+        <li><a href="#">💬 WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="f-copy">© 2024 Ramkrishnapur Ghat, Howrah. All rights reserved.</span>
+    <span class="f-quote">हर हर गंगे 🙏</span>
+  </div>
+</footer>
+
+<script>
+// ── PARTICLES ──
+const canvas = document.getElementById('particles-canvas');
+const ctx = canvas.getContext('2d');
+let W = canvas.width = window.innerWidth;
+let H = canvas.height = window.innerHeight;
+window.addEventListener('resize', () => { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; });
+
+const pts = Array.from({length:90}, () => ({
+  x: Math.random() * W, y: Math.random() * H,
+  r: Math.random() * 1.4 + 0.3,
+  vx: (Math.random() - 0.5) * 0.28,
+  vy: (Math.random() - 0.5) * 0.28,
+  a: Math.random() * 0.55 + 0.1
+}));
+
+function animPts() {
+  ctx.clearRect(0, 0, W, H);
+  pts.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(212,175,55,${p.a})`;
+    ctx.fill();
+  });
+  requestAnimationFrame(animPts);
+}
+animPts();
+
+// ── NAVBAR ──
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ── SCROLL REVEAL ──
+const revEls = document.querySelectorAll('.reveal');
+const revObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+revEls.forEach(el => revObs.observe(el));
+
+// ── LANGUAGE ──
+function setLang(lang) {
+  document.body.classList.toggle('hi', lang === 'hi');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-hi').classList.toggle('active', lang === 'hi');
+}
+
+// ── TOAST ──
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+// ── COPY ──
+function copyText(text, type) {
+  const hi = document.body.classList.contains('hi');
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(() => {
+      const msgs = {
+        shloka: hi ? 'श्लोक कॉपी हो गया ✓' : 'Shloka Copied! ✓',
+        mantra: hi ? 'मंत्र कॉपी हो गया ✓' : 'Mantra Copied! ✓',
+        quote: hi ? 'उद्धरण कॉपी हो गया ✓' : 'Quote Copied! ✓'
+      };
+      showToast(msgs[type] || 'Copied Successfully ✓');
+    });
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta);
+    ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+    showToast(hi ? 'कॉपी हो गया ✓' : 'Copied Successfully ✓');
+  }
+}
+
+// ── GALLERY FILTER ──
+function filterGal(btn, cat) {
+  document.querySelectorAll('.gf-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gal-item').forEach(item => {
+    const show = cat === 'all' || item.dataset.cat === cat;
+    item.style.display = show ? 'flex' : 'none';
+  });
+}
+
+// ── COPY FULL AARTI ──
+function copyAarti() {
+  const full = `ॐ जय गंगे माता — सम्पूर्ण आरती
+
+🪔 मुख्य धुन:
+ॐ जय गंगे माता, मैया जय गंगे माता।
+जो नर तुमको ध्याता, मन वांछित फल पाता॥
+
+१. चंद्र सी जोत तुम्हारी, जल निर्मल आता।
+शरण पड़े जो तेरी, सो नर तर जाता॥
+ॐ जय गंगे माता...
+
+२. पुत्र सगर के तारे, सब जग को ज्ञाता।
+कृपा दृष्टि हो तुम्हारी, त्रिभुवन सुख दाता॥
+ॐ जय गंगे माता...
+
+३. एक बार जो प्राणी, शरण तेरी आता।
+यम की त्रास मिटाकर, परमपद पाता॥
+ॐ जय गंगे माता...
+
+४. आरती मात तुम्हारी, जो नर नित गाता।
+सेवक वो तुम्हारा, अपार सुख पाता॥
+ॐ जय गंगे माता...
+
+५. हर हर गंगे बोलो, मन में हर्ष समाता।
+पाप ताप सब नाशे, परम ज्योत पाता॥
+ॐ जय गंगे माता...
+
+६. ब्रह्मा विष्णु शिवादि, सब तेरे गुण गाता।
+नारद ऋषि मुनि जन, मन में तुम्हें ध्याता॥
+ॐ जय गंगे माता...
+
+७. चार पदारथ देती, जो जन तुम्हें ध्याता।
+धर्म अर्थ मोक्ष काम, तुमसे नर पाता॥
+ॐ जय गंगे माता...
+
+हर हर गंगे 🙏
+जय माँ गंगे 🙏`;
+  const hi = document.body.classList.contains('hi');
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(full).then(() => showToast(hi ? 'पूरी आरती कॉपी हो गई! 🙏' : 'Full Aarti Copied! 🙏'));
+  }
+}
+
+// ── FORM ──
+function handleForm() {
+  const hi = document.body.classList.contains('hi');
+  showToast(hi ? 'संदेश भेजा गया! जय माँ गंगे 🙏' : 'Message Sent! Jai Maa Gange 🙏');
+}
+</script>
+</body>
+</html>
